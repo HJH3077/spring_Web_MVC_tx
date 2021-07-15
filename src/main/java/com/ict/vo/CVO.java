@@ -18,4 +18,5 @@ public class CVO {
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
+	
 }

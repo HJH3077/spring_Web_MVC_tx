@@ -1,3 +1,4 @@
+  
 package com.ict.service;
 
 import com.ict.vo.CVO;
@@ -5,8 +6,8 @@ import com.ict.vo.TVO;
 import com.ict.vo.VO;
 
 public interface MyService {
-	// MyDAOÀÇ insertCard¿Í insertTicketÀ» °°ÀÌ Ã³¸®ÇÏÀÚ
-	// ¿©·¯°³ÀÇ ÀÏÃ³¸®¸¦ ¹­¾î¼­ ÇÏ³ªÀÇ ´ÜÀ§·Î Ã³¸®ÇÏ´Â °ÍÀ» Æ®·£Àè¼ÇÀÌ¶ó°í ÇÑ´Ù.
+	// MyDAOì˜ insertCardì™€ insertTicketë¥¼ ê°™ì´ ì²˜ë¦¬í•˜ì 
+	// ì—¬ëŸ¬ê°œì˜ ì¼ì²˜ë¦¬ë¥¼ ë¬¶ì–´ì„œ í•˜ë‚˜ì˜ ë‹¨ìœ„ë¡œ ì²˜ë¦¬í•˜ëŠ” ê²ƒì„ íŠ¸ëœì­ì…˜ì´ë¼ê³  í•œë‹¤.
 	int insertCT(VO vo) throws Exception;
 	int insertCT2(CVO cvo, TVO tvo) throws Exception;
 }

@@ -4,7 +4,7 @@ public class VO {
 	private String consumerid, amount, countnum ;
 
 	public String getConsumerid() {
-		return consumerid; 
+		return consumerid;
 	}
 
 	public void setConsumerid(String consumerid) {
@@ -26,4 +26,5 @@ public class VO {
 	public void setCountnum(String countnum) {
 		this.countnum = countnum;
 	}
+	
 }

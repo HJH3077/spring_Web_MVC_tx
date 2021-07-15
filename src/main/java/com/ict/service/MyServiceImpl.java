@@ -15,14 +15,13 @@ public class MyServiceImpl implements MyService{
 	
 	@Override
 	public int insertCT(VO vo) throws Exception {
-		// Æ®·£Àè¼Ç : ¿©·¯°¡Áö ÀÛ¾÷À» ÇÏ³ªÀÇ ¹­À½À¸·Î Ã³¸®
-		// Æ®·£Àè¼Ç ´ÜÀ§°¡ ¸ğµÎ ´Ù ¼º°øÇØ¾ßÁö¸¸ ¼º°øÇÑ´Ù.
-		// ¿À·ù°¡ ÀÖÀ¸¸é ¸ğµÎ ´Ù ·Ñ¹éÀ» ÇØ¾ß ÇÑ´Ù.
-		myDAO.insertCard(vo); 
+		// íŠ¸ëœì­ì…˜ : ì—¬ëŸ¬ê°€ì§€ ì‘ì—…ì„ í•˜ë‚˜ì˜ ë¬¶ìŒ ì²˜ë¦¬ 
+		// íŠ¸ëœì­ì…˜ ë‹¨ìœ„ê°€ ëª¨ë‘ë‹¤ ì„±ê³µí•˜ì•¼ ì§€ë§Œ ì„±ê³µ 
+		// ì˜¤ë¥˜ê°€ ë°œìƒí•˜ë©´ ëª¨ë‘ë‹¤ ë¡¤ë°±ì„ í•´ì•¼ ëœë‹¤.
+		myDAO.insertCard(vo);
 		myDAO.insertTicket(vo);
 		return 1;
 	}
-	
 	@Override
 	public int insertCT2(CVO cvo, TVO tvo) throws Exception {
 		myDAO.insertCard(cvo);

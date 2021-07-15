@@ -1,4 +1,4 @@
-package com.ict.controller; 
+package com.ict.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,21 +13,21 @@ import com.ict.vo.VO;
 
 @Controller
 public class MyController {
-	@Autowired MyService myService;
-	
+	@Autowired MyService myService ;
 	@RequestMapping("result.do")
 	public ModelAndView resultCommand(VO vo) {
 		ModelAndView mv = new ModelAndView("result");
 		try {
 			vo.setCountnum(vo.getAmount());
-			int res = myService.insertCT(vo); 
-			
+			int res = myService.insertCT(vo);
+
+			// 성공하면 1, 실패하면 0 ;
 			mv.addObject("res", res);
 			mv.addObject("vo", vo);
-			return mv; 
+			return mv;
 		} catch (Exception e) {
-			mv.addObject("res", 0); 
-			return mv; 
+			mv.addObject("res", 0);
+			return mv;
 		}
 	}
 	
@@ -39,6 +39,7 @@ public class MyController {
 			tvo.setCountnum(cvo.getAmount());
 			int res = myService.insertCT2(cvo, tvo);
 
+			// 성공하면 1, 실패하면 0 ;
 			mv.addObject("res", res);
 			// mv.addObject("cvo", cvo);
 			// mv.addObject("tvo", tvo);
@@ -48,6 +49,4 @@ public class MyController {
 			return mv;
 		}
 	}
-	
-	
 }

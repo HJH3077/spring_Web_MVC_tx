@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
 </head>
 <body>
 	<h2> 결재 하기 </h2>
@@ -21,5 +22,6 @@
 		<p>티켓구매수 : <input type="number" name="amount"  required></p>
 		<input type="submit" value="구매하기" >
 	</form>
+	
 </body>
 </html>

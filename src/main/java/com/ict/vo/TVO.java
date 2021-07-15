@@ -1,7 +1,7 @@
 package com.ict.vo;
 
 public class TVO {
-	private String consumerid, countnum;
+	private String consumerid, countnum ;
 
 	public String getConsumerid() {
 		return consumerid;
@@ -18,4 +18,5 @@ public class TVO {
 	public void setCountnum(String countnum) {
 		this.countnum = countnum;
 	}
+	
 }
